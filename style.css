@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.card {
+    width: 305.381px;
+    height: 545.006px;
+    margin: 140.397px auto;
+    background: var(--card-BG);
+    border-radius: 10px;
+    box-shadow: 5px 1px 82px black;
+}
+.card .img {
+    position: relative;
+}
+.card .img img {
+    width: 271.398px;
+    height: 272.503px;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.card .img .view img {
+    opacity: 100%;
+    position: relative;
+    width: 39.958px;
+    height: 35.376px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -78%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card .img .view img:hover {
+    display: 100%;
+}
+.card .img .view {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 271.398px;
+    height: 272.503px;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 1rem;
+    left: 17px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.card .img .view:hover {
+    opacity: 100%;
+    
+}
+.card .img img::after {
+    content: '';
+    display: block;
+    width: 271.398px;
+    height: 272.503px;
+    background: var(--Cyan);
+    position: absolute;
+}
+.card .card-des {
+    padding: 0 1rem;
+}
+
+.card .card-des .title h3 {
+    color: var(--White); 
+    padding-bottom: 1rem;
+    transition: 0.5s ease;
+}
+.card .card-des .title h3:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.card .card-des .des p {
+    color: var(--Soft-blue);
+    padding-bottom: 1rem;
+    
+}
+.card .price-time {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .price-time .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Cyan);
+    
+}
+
+.card .price-time .price img {
+    padding-right: 5px;  
+}
+.card .price-time .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Soft-blue);
+}
+.card .price-time .time img {
+    padding-right: 5px;
+   
+}
+.card .creator{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.card .creator p {
+    padding-left: 5px;
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+.card .creator span {
+    color: var(--White);
+    transition: 0.5s ease;
+}
+.card .creator span:hover {
+    color: var(--Cyan);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card .creator img {
+    width: 30.954px;
+    height: 31.783px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.attribution {
+    padding-bottom: 2rem;
+}
